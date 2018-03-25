@@ -6,7 +6,7 @@ try {
     var se = Java.type("com.siebel.data.SiebelException");
 
     var sa = new sdb();
-    sa.login("Siebel://localhost:2321/SBA_82/FINSObjMgr_enu", "SADMIN", "Rjkjyrb1", "enu");
+    sa.login("Siebel://localhost:2321/SBA_82/FINSObjMgr_enu", "SADMIN", "*****", "enu");
     var accountBO = sa.getBusObject("Account");
     var accountBC = accountBO.getBusComp("Account");
     accountBC.clearToQuery();
