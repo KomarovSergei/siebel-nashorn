@@ -17,7 +17,7 @@ public class Main {
     public void test1() throws SiebelException {
         try {
             SiebelDataBean sa = new SiebelDataBean();
-            sa.login("Siebel://localhost:2321/SBA_82/FINSObjMgr_enu", "SADMIN", "Rjkjyrb1", "enu");
+            sa.login("Siebel://localhost:2321/SBA_82/FINSObjMgr_enu", "SADMIN", "*****", "enu");
 
             SiebelBusObject BO = sa.getBusObject("Account");
             SiebelBusComp BC = BO.getBusComp("Account");
