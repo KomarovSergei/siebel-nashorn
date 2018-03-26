@@ -1,3 +1,7 @@
+// to do
+// function connect to another js file (how to connect)
+// add some test framework
+
 try {
     const bc = Java.type("com.siebel.data.SiebelBusComp");
     const bo = Java.type("com.siebel.data.SiebelBusObject");
