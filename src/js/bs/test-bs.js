@@ -1,5 +1,5 @@
 print("before load");
-load("C:\\Users\\Administrator\\IdeaProjects\\connect_to_siebel_2\\src\\js\\bs\\utils.js");
+load(".\\src\\js\\bs\\utils.js");
 print(a);
 //try {
 //    var sa;
