@@ -1,18 +1,20 @@
 // to do
 // function connect to another js file (how to connect)
 // add some test framework
-
 try {
-    const bc = Java.type("com.siebel.data.SiebelBusComp");
-    const bo = Java.type("com.siebel.data.SiebelBusObject");
-    const se = Java.type("com.siebel.data.SiebelException");
     var sa;
+
+    (function importClasses(clas1, clas2, clas3) {
+        const bc = Java.type(clas1);
+        const bo = Java.type(clas2);
+        const se = Java.type(clas3);
+    })("com.siebel.data.SiebelBusComp", "com.siebel.data.SiebelBusObject", "com.siebel.data.SiebelException");
 
     (function connect(conStr, usr, pass, lang) {
        const sdb = Java.type("com.siebel.data.SiebelDataBean");
        sa = new sdb();
        sa.login(conStr, usr, pass, lang);
-    })("Siebel://localhost:2321/SBA_82/FINSObjMgr_enu", "SADMIN", "*****", "enu");
+    })("Siebel://localhost:2321/SBA_82/FINSObjMgr_enu", "SADMIN", "******", "enu");
 
     let accountBO = sa.getBusObject("Account");
     let accountBC = accountBO.getBusComp("Account");
