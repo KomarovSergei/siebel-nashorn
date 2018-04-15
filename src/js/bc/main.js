@@ -14,7 +14,7 @@ try {
        const sdb = Java.type("com.siebel.data.SiebelDataBean");
        sa = new sdb();
        sa.login(conStr, usr, pass, lang);
-    })("Siebel://localhost:2321/SBA_82/FINSObjMgr_enu", "SADMIN", "******", "enu");
+    })("Siebel://localhost:2321/SBA_82/FINSObjMgr_enu", "SADMIN", "Rjkjyrb1", "enu");
 
     let accountBO = sa.getBusObject("Account");
     let accountBC = accountBO.getBusComp("Account");
@@ -31,5 +31,5 @@ try {
 } finally {
     accountBC = null;
     accountBO = null;
-    sa.logoff();
+    //sa.logoff();
 }

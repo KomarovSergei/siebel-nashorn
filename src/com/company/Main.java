@@ -19,7 +19,7 @@ public class Main {
     @Before
     public void prepareConnect() {
         try {
-            sa.login("Siebel://localhost:2321/SBA_82/FINSObjMgr_enu", "SADMIN", "******", "enu");
+            sa.login("Siebel://localhost:2321/SBA_82/FINSObjMgr_enu", "SADMIN", "Rjkjyrb1", "enu");
         } catch (SiebelException e) {
             e.printStackTrace();
         }
@@ -67,7 +67,7 @@ public class Main {
             bs.invokeMethod("Echo", psIn, psOut);
 
             System.out.println(bs);
-            System.out.println(psIn.getProperty("testType1"));
+            System.out.println(psOut.getProperty("testType1"));
 
         } catch(SiebelException e) {
             e.printStackTrace();
