@@ -24,7 +24,6 @@ try {
         accountBC.executeQuery(true);
         if (accountBC.firstRecord()) {
             var accountName = accountBC.getFieldValue("Name");
-            //print(t);
         }
 
         return accountName
@@ -35,5 +34,4 @@ try {
 } finally {
     accountBC = null;
     accountBO = null;
-    //sa.logoff();
 }

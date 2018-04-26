@@ -1,4 +1,4 @@
-load(".\\src\\js\\bs\\qunit-1.18.0.js");
+load(".\\src\\tests\\bs\\qunit-1.18.0.js");
 
 with(QUnit) {
   init();
@@ -39,7 +39,6 @@ try {
     var psOut = sa.newPropertySet();
     var bs = sa.getService("Workflow Utilities");
     bs.invokeMethod("Echo", psIn, psOut);
-    print(psOut.getProperty("testType1"));
 
 } catch (e) {
     print("-----error-----");
