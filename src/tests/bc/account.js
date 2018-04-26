@@ -1,6 +1,3 @@
-// to do
-// function connect to another js file (how to connect)
-// add some test framework
 try {
     var getAccountName = function() {
         var sa;
